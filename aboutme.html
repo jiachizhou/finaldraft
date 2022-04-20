@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--  TIP 
+	You will find any errors from the head section using the console. -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/53d0ee4586.js" crossorigin="anonymous"></script>
+	<title>About Me</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXKCFKY3RD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BXKCFKY3RD');
+    </script>
+</head>
+<body>
+	<header>
+		<a class = "skip" href= "#main">Skip to Main Content</a>
+		<nav>
+		  <ul class="nav_links">
+			  <li><a href = "index.html">Projects</a></li>
+			  <li><a href = "gallery.html">Photography</a></li>
+			  <li class="active"><a href = "aboutme.html">About Me</a></li>
+		  </ul>
+		</nav>
+		<h1 id="main">About Me</h1>
+	  </header>
+	
+	<main>
+		<div class="flip-card" tabindex="0">
+			<div class="flip-card-inner">
+			  <div class="flip-card-front">
+				<img src="images/aboutme.jpeg" alt="Avatar" style="width:300px;height:300px;">
+			  </div>
+			  <div class="flip-card-back">
+				<h1>Jiaqi Zhou</h1>
+				<p>UX Student</p>
+				<p>University of Michigan</p>
+			  </div>
+			</div>
+		  </div>
+	<!-- <img id='me' src = "images/gettycenter.jpg" alt = "Portrait of Jiaqi Zhou"/> -->
+	<p>Hi there! Currently, I am a graduate student studying HCI at the University of Michigan.</p>
+
+	<p>When I was a kid, I started to learn drawing, which helped me develop an interest in art and design, 
+			and also made me become a good observer. In addition, I used to study electronic engineering. In order to combine my interest in design and engineering background, I considered becoming a product designer. </p>
+		
+	<p>After graduating from university, I interned at TCL and Lantu Tech as a product intern, 
+		responsible for product requirement definition and interaction design. The internship 
+		experiences confirmed my interest in product design.</p>
+		
+	<p>In my leisure time, I like drawing and traveling :)</p>
+
+	</main>
+	
+	<footer class="formgrid">
+		<form  action="https://formspree.io/f/mrgjlqrp"
+		method="POST">
+		 <fieldset>
+		   <legend><i class="fa-solid fa-envelope"></i> Contact Me</legend>
+		   
+		   <label for="name_id">Your Name</label>
+		   <input type="text" name='user_name' id='name_id' placeholder="Enter Your Name">
+	   
+		   <label for="email_id">Your Email</label>
+		   <input type="email" name="user_email" id="email_id">
+		   
+		   <label for="number_id">Your Number</label>
+		   <input type="tel" name="user_number" id="number_id" placeholder="Format: 123-456-7890">
+	   
+	   
+		   <label for="message_id">Leave A Message to me</label>
+	   
+		   <textarea name='message' id="message_id"></textarea>
+
+		   <input type="submit" name="submit" id="submit_id" value="click to submit" >
+		 </fieldset>
+		</form>
+		<p class="note">Jiaqi Zhou &copy; 2022</p>
+	</footer>
+</body>
+</html>

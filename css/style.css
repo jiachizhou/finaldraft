@@ -1,0 +1,349 @@
+img{
+    padding: 0px;
+    border: 1px #e0e0e0;
+    border-radius: 5px;
+    /* margin: 50px 50px 15px 50px; */
+    box-shadow: 0px 2px 10px 2px #d5d5d8;
+}
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  line-height: 1.2;
+  color: #454545;
+  font-size: 18px;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+}
+
+h2{
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.note{
+  text-align: center;
+  font-size: 18px;
+}
+.fontbold{
+  font-weight: bold;
+}
+
+.detailgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5%;
+}
+
+.detail{
+  font-size: 18px;
+}
+.nav_links{
+  text-align: center;
+  background:rgba(148, 148, 148, 0.19)
+}
+
+#me{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flexcontainer img:nth-child(2n){
+  box-shadow: 0px 2px 15px 2px #757575;
+}
+
+
+
+.mockup{
+  margin: 0px;
+  width: 160px;
+}
+
+.banner{
+  margin: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+  width: 100%;
+  background-color: #d5d5d8;
+}
+
+.ani{
+  text-align: center;
+  font-size: 50px;
+}
+.background{
+  background-image: url('../images/539background.png');
+  background-size: 100%;
+}
+
+
+img:hover{
+    filter:brightness(95%);
+    border: marker;
+}
+
+.skip{
+  display: absolute;
+  margin-left: -200px;
+}
+
+a:visited{
+    color: black;
+}
+
+.active{
+    background: #270fff;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.active a{
+    color: #ffffff;
+}
+
+main{
+  font-family: karla, sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.card img{
+  width: 100%;
+  box-shadow: none;
+}
+
+div.card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+
+
+div.cardtitle {
+  padding: 10px;
+}
+
+  
+  legend{
+    font-size: 110%;
+    text-transform: uppercase;
+
+  }
+  
+  label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  #submit_id{
+    margin-top: 20px;
+  }
+  #message_id{
+    display: block;
+  }
+
+  footer > p{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+.formgrid{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+}
+
+
+#ani{
+    animation: mymove 2s;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+@keyframes mymove{
+    from {width: 95%; opacity: 0.1;}
+    to {width: 100%; opacity: 1;}
+}
+
+.banner{
+  background: url('../images/projectdetail-banner.png') #dedede;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+
+  background-color: #bbb;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Style the back side */
+.flip-card-back {
+
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  border-radius: 5px;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+
+  #ani{
+      animation: none !important;
+  }
+
+  #banner{
+    background-attachment: initial;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: none;
+  }
+  
+  .flip-card:focus .flip-card-inner {
+    transform: none;
+  }
+
+  .flip-card-back {
+    transform: none;
+  }
+}
+
+.picturegrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  justify-items: center;
+  grid-row-gap: 20px;
+}
+
+.flexcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  justify-content: center;
+}
+
+.flexcontainer img{
+  width: 350px;
+  margin-top: 30px;
+}
+
+
+
+@media only screen and (min-width: 700px){
+  .flexcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    justify-items: center;
+
+  }
+
+  .flexcontainer > img{
+    height: 100%;
+    margin: 10px;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1280px){
+  .homecard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+  }
+
+  ul > li{
+    margin: 20px;
+    padding: 5px;
+
+  }
+
+  .flexcontainer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .picturegrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
